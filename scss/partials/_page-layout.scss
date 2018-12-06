@@ -1,0 +1,77 @@
+/*Page layout*/
+
+@import 'partials/colors';
+
+ .page-wrapper {
+     width: auto;
+     margin: 0 1vw 0 1vw;
+ }
+
+.design-selection, .design-archives{
+    position: absolute;
+    top: 12em;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.select,
+.archives,
+.next,
+.resources,
+.designer-name {
+    display: none;
+}
+
+li {
+    color: $white;
+}
+
+#zen-resources ul {
+ padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#zen-preamble {
+    margin-top: 5em;
+}
+
+header,
+#zen-summary,
+nav {
+    text-align: center;
+}
+
+.viewall {
+    position: absolute;
+    left: 60em;
+    top: -4em;
+}
+
+#zen-benefits,
+#zen-benefits p {
+    margin-top: -1em;
+}
+
+#zen-preamble::before {
+    content: '/*icon goes here*/';
+    float: left;
+}
+
+#zen-explanation::before {
+    content: '/*icon goes here*/';
+    float: right;
+}
+
+#zen-participation::before {
+    content: '/*icon goes here*/';
+    float: left;
+}
+
+#zen-requirements::before {
+    content: '/*icon goes here*/';
+    float: right;
+}
