@@ -1,13 +1,19 @@
 /*Page layout*/
+$white: white;
 
-@import 'partials/colors';
+$bg-main: #4e7180; // dark blue (background)
+$div-bg: #53869c; // mid blue (div background)
+$light-blue: #58a4b0; // lighter blue
+$dark-blue: #373f51; // darkest blue
+$gray-white: #e2e2e2; // white
 
- .page-wrapper {
-     width: auto;
-     margin: 0 1vw 0 1vw;
- }
+.page-wrapper {
+    width: auto;
+    margin: 0 1vw 0 1vw;
+}
 
-.design-selection, .design-archives{
+.design-selection,
+.design-archives {
     position: absolute;
     top: 12em;
 }
@@ -30,7 +36,7 @@ li {
 }
 
 #zen-resources ul {
- padding: 0;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
 }

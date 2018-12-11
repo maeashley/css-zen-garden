@@ -1,77 +1,67 @@
+/*Page layout*/
 .page-wrapper {
   width: auto;
-  margin: 0 1vw 0 1vw;
-}
-
+  margin: 0 1vw 0 1vw; }
 
 .design-selection,
 .design-archives {
   position: absolute;
-  top: 12em;
-}
+  top: 12em; }
 
 nav ul {
   display: flex;
-  flex-flow: row wrap;
-}
+  flex-flow: row wrap; }
 
 .select,
 .archives,
 .next,
 .resources,
 .designer-name {
-  display: none;
-}
+  display: none; }
 
 li {
-  color: white;
-}
+  color: white; }
 
 #zen-resources ul {
   padding: 0;
   display: flex;
-  flex-flow: row wrap;
-}
+  flex-flow: row wrap; }
 
 #zen-preamble {
-  margin-top: 5em;
-}
+  margin-top: 5em; }
 
 header,
 #zen-summary,
 nav {
-  text-align: center;
-}
+  text-align: center; }
 
 .viewall {
   position: absolute;
   left: 60em;
-  top: -4em;
-}
+  top: -4em; }
 
 #zen-benefits,
 #zen-benefits p {
-  margin-top: -1em;
-}
+  margin-top: -1em; }
 
 #zen-preamble::before {
   content: '/*icon goes here*/';
-  float: left;
-}
+  float: left; }
 
 #zen-explanation::before {
   content: '/*icon goes here*/';
-  float: right;
-}
+  float: right; }
 
 #zen-participation::before {
   content: '/*icon goes here*/';
-  float: left;
-}
+  float: left; }
 
 #zen-requirements::before {
   content: '/*icon goes here*/';
-  float: right;
-}
+  float: right; }
+
+/*position cloud*/
+header[role='banner'] {
+  background-image: url("../../assets/icons/cloud.svg"); }
 
 /*# sourceMappingURL=styles.css.map */
