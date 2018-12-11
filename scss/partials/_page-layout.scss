@@ -1,20 +1,56 @@
 /*Page layout*/
 
-@import 'partials/colors';
+//@import 'partials/colors';
+$white: white;
 
- .page-wrapper {
-     width: auto;
-     margin: 0 1vw 0 1vw;
- }
+$bg-main: #4e7180; // dark blue (background)
+$div-bg: #53869c; // mid blue (div background)
+$light-blue: #58a4b0; // lighter blue
+$dark-blue: #373f51; // darkest blue
+$gray-white: #e2e2e2; // white
+$dark-gray: #343434;
 
-.design-selection, .design-archives{
-    position: absolute;
-    top: 12em;
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Barlow");
+
+$primary-font: 'Barlow',
+sans-serif;
+$secondary-font: 'Shrikhand',
+'cursive',
+serif;
+
+body {
+ background-color: $bg-main;
+ font-family: $primary-font;
+ max-width: 80%;
+ margin: auto;
+}
+
+h1,
+h2,
+h3 {
+ font-family: $secondary-font;
+ word-spacing: .08em;
+ letter-spacing: .05em;
+ color: $dark-gray;
+}
+
+.page-wrapper {
+ width: auto;
+ margin: 0 1vw 0 1vw;
+}
+
+.design-selection,
+.design-archives {
+ position: absolute;
+ top: 12em;
+ left: 18%;
 }
 
 nav ul {
-    display: flex;
-    flex-flow: row wrap;
+ display: flex;
+ flex-flow: row wrap;
 }
 
 .select,
@@ -22,56 +58,135 @@ nav ul {
 .next,
 .resources,
 .designer-name {
-    display: none;
+ display: none;
 }
 
 li {
-    color: $white;
+ color: $bg-main;
+}
+
+nav a {
+ text-decoration: none;
+ color: $gray-white;
+}
+
+nav a:hover {
+ text-decoration: underline;
 }
 
 #zen-resources ul {
- padding: 0;
-    display: flex;
-    flex-flow: row wrap;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ margin: -.5em -10.3em -.5em -10.3em;
+ background-color: $light-blue;
+ padding: 1em 10.3em;
+ list-style: none;
+}
+
+#zen-resources ul a {
+ text-decoration: none;
+ color: $gray-white;
+}
+
+#zen-resources ul a:hover {
+ text-decoration: underline;
 }
 
 #zen-preamble {
-    margin-top: 5em;
+ margin: 5em -10.3em -.5em -10.3em;
+ background-color: #58a4b0;
+ padding: .1em 10.3em;
 }
 
 header,
-#zen-summary,
-nav {
-    text-align: center;
+#zen-summary {
+ text-align: center;
 }
 
 .viewall {
-    position: absolute;
-    left: 60em;
-    top: -4em;
+ width: 10em;
+ position: absolute;
+ left: 50em;
+ top: -2.5em;
 }
 
 #zen-benefits,
 #zen-benefits p {
-    margin-top: -1em;
+ margin-top: -1em;
+}
+
+#zen-participation {
+ margin: 1em -10.3em -.5em -10.3em;
+ background-color: $light-blue;
+ padding: .1em 10.3em;
+}
+
+p > a {
+ text-decoration: none;
+ color: black;
+}
+
+p > a:hover {
+ text-decoration: underline;
+}
+
+#zen-benefits {
+ margin: -2em -10.3em -.5em -10.3em;
+ background-color: $light-blue;
+ padding: .1em 10.3em;
+}
+
+[role='contentinfo'] {
+ margin: 1em -10.3em 1em -10.3em;
+ background-color: $light-blue;
+ padding: .5em 10.3em;
+ text-align: center;
+}
+
+[role='contentinfo'] a {
+ color: $gray-white;
+ text-decoration: none;
+}
+
+[role='contentinfo'] a:hover {
+ text-decoration: underline;
+}
+
+footer {
+ margin: -1em -10.3em -.5em -10.3em;
+ background-color: $light-blue;
+ padding: .5em 10.3em;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+footer a {
+ text-decoration: none;
+ color: $gray-white;
+}
+
+footer a:hover {
+ text-decoration: underline;
 }
 
 #zen-preamble::before {
-    content: '/*icon goes here*/';
-    float: left;
+ content: ' ';
+ float: left;
+ // background-image: url('')
 }
 
 #zen-explanation::before {
-    content: '/*icon goes here*/';
-    float: right;
+ content: '/*icon goes here*/';
+ float: right;
 }
 
 #zen-participation::before {
-    content: '/*icon goes here*/';
-    float: left;
+ content: '/*icon goes here*/';
+ float: left;
 }
 
 #zen-requirements::before {
-    content: '/*icon goes here*/';
-    float: right;
+ content: '/*icon goes here*/';
+ float: right;
 }
