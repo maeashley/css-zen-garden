@@ -1,67 +1,95 @@
 /*Page layout*/
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Barlow");
+
+body {
+  background-color: #4e7180;
+  font-family: "Barlow", sans-serif;
+  max-width: 80%;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Shrikhand", "cursive", serif;
+  word-spacing: .08em;
+  letter-spacing: .05em;
+  color: #343434;
+}
+
 .page-wrapper {
   width: auto;
-  margin: 0 1vw 0 1vw; }
+  margin: 0 1vw 0 1vw;
+}
 
 .design-selection,
 .design-archives {
   position: absolute;
-  top: 12em; }
+  top: 12em;
+  left: 18%;
+}
 
 nav ul {
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+}
 
 .select,
 .archives,
 .next,
 .resources,
 .designer-name {
-  display: none; }
+  display: none;
+}
 
 li {
-  color: white; }
+  color: #4e7180;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
 
 #zen-resources ul {
-  padding: 0;
   display: flex;
-  flex-flow: row wrap; }
+  margin: -1em -10.3em -.5em -10.3em;
+  padding: .5em 10.3em;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-#zen-preamble {
-  margin-top: 5em; }
+footer a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
 
-header,
-#zen-summary,
-nav {
-  text-align: center; }
-
-.viewall {
-  position: absolute;
-  left: 60em;
-  top: -4em; }
-
-#zen-benefits,
-#zen-benefits p {
-  margin-top: -1em; }
+footer a:hover {
+  text-decoration: underline;
+}
 
 #zen-preamble::before {
-  content: '/*icon goes here*/';
-  float: left; }
+  content: ' ';
+  float: left;
+}
 
 #zen-explanation::before {
   content: '/*icon goes here*/';
-  float: right; }
+  float: right;
+}
 
 #zen-participation::before {
-  content: '/*icon goes here*/';
-  float: left; }
+  float: left;
+}
 
 #zen-requirements::before {
   content: '/*icon goes here*/';
-  float: right; }
-
-/*position cloud*/
-header[role='banner'] {
-  background-image: url("../../assets/icons/cloud.svg"); }
+  float: right;
+}
 
 /*# sourceMappingURL=styles.css.map */
