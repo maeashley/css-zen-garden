@@ -1,8 +1,14 @@
 /*Page layout*/
-$white: white;
 
 @import 'colors';
-@import 'positioning';
+$white: white;
+
+//$bg-main: #4e7180; // dark blue (background)
+//$div-bg: #53869c; // mid blue (div background)
+//$light-blue: #58a4b0; // lighter blue
+//$dark-blue: #373f51; // darkest blue
+//$gray-white: #e2e2e2; // white
+//$dark-gray: #343434;
 
 //fonts
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
@@ -69,6 +75,16 @@ nav a:hover {
 }
 
 #zen-resources ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: -.5em -10.3em -.5em -10.3em;
+    background-color: $light-blue;
+    padding: 1em 10.3em;
+    list-style: none;
+}
+
+#zen-resources ul a {
     text-decoration: none;
     color: $gray-white;
 }
@@ -80,6 +96,7 @@ nav a:hover {
 #zen-preamble {
     margin: 5em -10.3em -.5em -10.3em;
     background-color: #58a4b0;
+    padding: .1em 10.3em;
 }
 
 header,
@@ -87,11 +104,20 @@ header,
     text-align: center;
 }
 
+//header::after {
+// content: ' ';
+// background-image: url('/assets/icons/cloud.svg');
+// width: 100px;
+// height: 135px;
+// background-repeat: no-repeat;
+// background-size: cover;
+//}
+
 .viewall {
     width: 10em;
     position: absolute;
     left: 50em;
-    top: -2.5em;
+    top: -1.8em;
 }
 
 #zen-benefits,
@@ -156,12 +182,20 @@ footer a:hover {
 #zen-preamble::before {
     content: ' ';
     float: left;
-    // background-image: url('')
+    background-image: url('/assets/icons/snowman.svg');
+    width: 100px;
+    height: 135px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #zen-explanation::before {
-    content: '/*icon goes here*/';
+    content: ' ';
     float: right;
+    background-image: url('/assets/icons/Snowflake.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
 }
 
 #zen-participation::before {
@@ -170,6 +204,10 @@ footer a:hover {
 }
 
 #zen-requirements::before {
-    content: '/*icon goes here*/';
+    content: ' ';
     float: right;
+    background-image: url('/assets/icons/mug.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
 }
