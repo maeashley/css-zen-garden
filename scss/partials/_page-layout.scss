@@ -1,15 +1,8 @@
 /*Page layout*/
 $white: white;
 
-//@import 'partials/colors';
-$white: white;
-
-$bg-main: #4e7180; // dark blue (background)
-$div-bg: #53869c; // mid blue (div background)
-$light-blue: #58a4b0; // lighter blue
-$dark-blue: #373f51; // darkest blue
-$gray-white: #e2e2e2; // white
-$dark-gray: #343434;
+@import 'colors';
+@import 'positioning';
 
 //fonts
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
