@@ -4,7 +4,7 @@
     height: 0px;
     display: block;
     position: relative;
-    top: -47vw;
+    top: -48vw;
     left: 2.5vw;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
@@ -40,7 +40,7 @@
 }
 
 // media queries
-@media only screen and(max-width:450) {
+@media screen and(max-width:450) {
     .extra2 {
         top: -12vw;
         left: 1vw;
