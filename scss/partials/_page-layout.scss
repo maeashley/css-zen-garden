@@ -96,16 +96,28 @@ header,
 }
 
 .viewall {
-    width: 10em;
+    width: 8em;
     position: absolute;
     left: 50.7em;
     top: -1.8em;
+    transition-duration: .5s;
 
-    :hover {
+    &::after {
+        content: '   >';
+        font-weight: bold;
+        color: $bg-main;
+        transition-duration: 1.5s;
+    }
+
+    &:hover {
         padding: .5em;
         border: 1.5px solid $gray-white;
         text-decoration: underline;
         border-radius: 8px;
+
+        &::after {
+            color: $gray-white;
+        }
     }
 }
 
