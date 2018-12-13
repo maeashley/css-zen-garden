@@ -30,7 +30,7 @@ h3 {
 .design-selection,
 .design-archives {
     position: absolute;
-    top: 12em;
+    top: 16.5em;
     left: 18%;
 }
 
@@ -98,8 +98,15 @@ header,
 .viewall {
     width: 10em;
     position: absolute;
-    left: 50em;
+    left: 50.7em;
     top: -1.8em;
+
+    :hover {
+        padding: .5em;
+        border: 1.5px solid $gray-white;
+        text-decoration: underline;
+        border-radius: 8px;
+    }
 }
 
 #zen-benefits p {
@@ -154,10 +161,10 @@ footer {
 footer a {
     text-decoration: none;
     color: $gray-white;
-}
 
-:hover {
-    text-decoration: underline;
+    :hover {
+        text-decoration: underline;
+    }
 }
 
 #zen-preamble::before {
@@ -198,4 +205,40 @@ footer a {
 
 [role="banner"]>h2 {
     margin-top: -25px;
+}
+
+@media only screen and (max-width:450px) {
+
+    //reposition cloud
+    .extra1 {
+        top: -55px;
+    }
+
+    header {
+        text-align: none;
+        margin-top: 3.5em;
+    }
+
+    .viewall {
+        position: static;
+        left: 15em;
+        top: 7em;
+        margin-top: 14.5em;
+        margin-left: 2.25em;
+
+        :active {
+            padding: .5em;
+            border: 1.5px solid $gray-white;
+            text-decoration: underline;
+            border-radius: 8px;
+        }
+    }
+
+    .design-selection {
+        display: none;
+    }
+
+    #zen-summary {
+        margin-top: 8em;
+    }
 }

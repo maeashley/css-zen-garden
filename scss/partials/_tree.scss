@@ -40,7 +40,7 @@
 }
 
 // media queries
-@media screen and(max-width:450) {
+@media only screen and(max-width:450) {
     .extra2 {
         top: -12vw;
         left: 1vw;
