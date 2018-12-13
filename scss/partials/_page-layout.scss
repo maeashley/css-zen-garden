@@ -1,24 +1,16 @@
 /*Page layout*/
 
 @import 'colors';
-@import 'positioning';
+@import 'fonts';
 @import 'tree';
-
-//fonts
-@import url("https://fonts.googleapis.com/css?family=Shrikhand");
-@import url("https://fonts.googleapis.com/css?family=Barlow");
-
-$primary-font: 'Barlow',
-sans-serif;
-$secondary-font: 'Shrikhand',
-'cursive',
-serif;
+@import 'positioning';
 
 body {
     background-color: $bg-main;
     font-family: $primary-font;
     max-width: 80%;
     margin: auto;
+    background-image: url('/assets/snow5.gif_c200');
 }
 
 h1,
@@ -32,13 +24,13 @@ h3 {
 
 .page-wrapper {
     width: auto;
-    margin: 0 1vw 0 1vw;
+    margin: 0 1vw;
 }
 
 .design-selection,
 .design-archives {
     position: absolute;
-    top: 16.5em;
+    top: 12em;
     left: 18%;
 }
 
@@ -62,10 +54,10 @@ li {
 nav a {
     text-decoration: none;
     color: $gray-white;
-}
 
-nav a:hover {
-    text-decoration: underline;
+    :hover {
+        text-decoration: underline;
+    }
 }
 
 #zen-resources ul {
@@ -76,15 +68,15 @@ nav a:hover {
     background-color: $light-blue;
     padding: 1em 10.3em;
     list-style: none;
-}
 
-#zen-resources ul a {
-    text-decoration: none;
-    color: $gray-white;
-}
+    a {
+        text-decoration: none;
+        color: $gray-white;
 
-#zen-resources ul a:hover {
-    text-decoration: underline;
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 #zen-preamble {
@@ -101,10 +93,6 @@ header,
 #zen-summary {
     margin: auto;
     width: 60%;
-}
-
-[role="banner"]>h2 {
-    margin-top: -25px;
 }
 
 .viewall {
@@ -127,10 +115,10 @@ header,
 p>a {
     text-decoration: none;
     color: black;
-}
 
-p>a:hover {
-    text-decoration: underline;
+    :hover {
+        text-decoration: underline;
+    }
 }
 
 #zen-benefits {
@@ -144,15 +132,15 @@ p>a:hover {
     background-color: $light-blue;
     padding: .5em 10.3em;
     text-align: center;
-}
 
-[role='contentinfo'] a {
-    color: $gray-white;
-    text-decoration: none;
-}
+    a {
+        color: $gray-white;
+        text-decoration: none;
 
-[role='contentinfo'] a:hover {
-    text-decoration: underline;
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 footer {
@@ -168,7 +156,7 @@ footer a {
     color: $gray-white;
 }
 
-footer a:hover {
+:hover {
     text-decoration: underline;
 }
 
@@ -193,7 +181,7 @@ footer a:hover {
 }
 
 #zen-participation::before {
-    content: '';
+    content: ' ';
     width: 100px;
     height: 100px;
     float: left;
@@ -206,4 +194,8 @@ footer a:hover {
     width: 100px;
     height: 100px;
     background-repeat: no-repeat;
+}
+
+[role="banner"]>h2 {
+    margin-top: -25px;
 }
