@@ -1,18 +1,7 @@
 /*Page layout*/
 
 @import 'colors';
-$white: white;
-
-//$bg-main: #4e7180; // dark blue (background)
-//$div-bg: #53869c; // mid blue (div background)
-//$light-blue: #58a4b0; // lighter blue
-//$dark-blue: #373f51; // darkest blue
-//$gray-white: #e2e2e2; // white
-//$dark-gray: #343434;
-
-//fonts
-@import url("https://fonts.googleapis.com/css?family=Shrikhand");
-@import url("https://fonts.googleapis.com/css?family=Barlow");
+@import 'fonts';
 
 $primary-font: 'Barlow',
 sans-serif;
@@ -25,6 +14,7 @@ body {
  font-family: $primary-font;
  max-width: 80%;
  margin: auto;
+ background-image: url('/assets/snow5.gif_c200');
 }
 
 h1,
@@ -38,7 +28,7 @@ h3 {
 
 .page-wrapper {
  width: auto;
- margin: 0 1vw 0 1vw;
+ margin: 0 1vw;
 }
 
 .design-selection,
@@ -68,10 +58,10 @@ li {
 nav a {
  text-decoration: none;
  color: $gray-white;
-}
 
-nav a:hover {
- text-decoration: underline;
+ :hover {
+  text-decoration: underline;
+ }
 }
 
 #zen-resources ul {
@@ -82,19 +72,19 @@ nav a:hover {
  background-color: $light-blue;
  padding: 1em 10.3em;
  list-style: none;
-}
 
-#zen-resources ul a {
- text-decoration: none;
- color: $gray-white;
-}
+ a {
+  text-decoration: none;
+  color: $gray-white;
 
-#zen-resources ul a:hover {
- text-decoration: underline;
+  :hover {
+   text-decoration: underline;
+  }
+ }
 }
 
 #zen-preamble {
- margin: 5em -10.3em -.5em -10.3em;
+ margin: 10em -10.3em -.5em -10.3em;
  background-color: #58a4b0;
  padding: .1em 10.3em;
 }
@@ -104,14 +94,10 @@ header,
  text-align: center;
 }
 
-//header::after {
-// content: ' ';
-// background-image: url('/assets/icons/cloud.svg');
-// width: 100px;
-// height: 135px;
-// background-repeat: no-repeat;
-// background-size: cover;
-//}
+#zen-summary {
+ margin: auto;
+ width: 60%;
+}
 
 .viewall {
  width: 10em;
@@ -120,7 +106,6 @@ header,
  top: -1.8em;
 }
 
-#zen-benefits,
 #zen-benefits p {
  margin-top: -1em;
 }
@@ -134,10 +119,10 @@ header,
 p > a {
  text-decoration: none;
  color: black;
-}
 
-p > a:hover {
- text-decoration: underline;
+ :hover {
+  text-decoration: underline;
+ }
 }
 
 #zen-benefits {
@@ -151,15 +136,15 @@ p > a:hover {
  background-color: $light-blue;
  padding: .5em 10.3em;
  text-align: center;
-}
 
-[role='contentinfo'] a {
- color: $gray-white;
- text-decoration: none;
-}
+ a {
+  color: $gray-white;
+  text-decoration: none;
 
-[role='contentinfo'] a:hover {
- text-decoration: underline;
+  :hover {
+   text-decoration: underline;
+  }
+ }
 }
 
 footer {
@@ -173,9 +158,8 @@ footer {
 footer a {
  text-decoration: none;
  color: $gray-white;
-}
 
-footer a:hover {
+ :hover {
  text-decoration: underline;
 }
 
@@ -187,6 +171,7 @@ footer a:hover {
  height: 135px;
  background-repeat: no-repeat;
  background-size: cover;
+ margin: .5em .5em 0 0;
 }
 
 #zen-explanation::before {
@@ -199,8 +184,9 @@ footer a:hover {
 }
 
 #zen-participation::before {
- content: '/*icon goes here*/';
+ content: ' ';
  float: left;
+
 }
 
 #zen-requirements::before {
