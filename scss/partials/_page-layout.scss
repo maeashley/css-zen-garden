@@ -1,14 +1,8 @@
 /*Page layout*/
 
 @import 'colors';
-$white: white;
-
-//$bg-main: #4e7180; // dark blue (background)
-//$div-bg: #53869c; // mid blue (div background)
-//$light-blue: #58a4b0; // lighter blue
-//$dark-blue: #373f51; // darkest blue
-//$gray-white: #e2e2e2; // white
-//$dark-gray: #343434;
+@import 'positioning';
+@import 'tree';
 
 //fonts
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
@@ -44,7 +38,7 @@ h3 {
 .design-selection,
 .design-archives {
     position: absolute;
-    top: 12em;
+    top: 16.5em;
     left: 18%;
 }
 
@@ -94,7 +88,7 @@ nav a:hover {
 }
 
 #zen-preamble {
-    margin: 5em -10.3em -.5em -10.3em;
+    margin: 10em -10.3em -.5em -10.3em;
     background-color: #58a4b0;
     padding: .1em 10.3em;
 }
@@ -104,14 +98,14 @@ header,
     text-align: center;
 }
 
-//header::after {
-// content: ' ';
-// background-image: url('/assets/icons/cloud.svg');
-// width: 100px;
-// height: 135px;
-// background-repeat: no-repeat;
-// background-size: cover;
-//}
+#zen-summary {
+    margin: auto;
+    width: 60%;
+}
+
+[role="banner"]>h2 {
+    margin-top: -25px;
+}
 
 .viewall {
     width: 10em;
@@ -120,7 +114,6 @@ header,
     top: -1.8em;
 }
 
-#zen-benefits,
 #zen-benefits p {
     margin-top: -1em;
 }
@@ -187,6 +180,7 @@ footer a:hover {
     height: 135px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: .5em .5em 0 0;
 }
 
 #zen-explanation::before {
@@ -199,7 +193,9 @@ footer a:hover {
 }
 
 #zen-participation::before {
-    content: '/*icon goes here*/';
+    content: '';
+    width: 100px;
+    height: 100px;
     float: left;
 }
 

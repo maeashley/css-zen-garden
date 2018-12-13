@@ -1,9 +1,13 @@
 /*position cloud*/
-header::after {
-    content: '';
+.extra1 {
     background-image: url('/assets/icons/cloud.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 10em;
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    z-index: -1;
+    transform: rotate(180deg);
 }
