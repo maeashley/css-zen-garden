@@ -1,70 +1,114 @@
 //media query for mobile
 @media only screen and (max-width: 450px) {
- body {
-  max-width: 100vw;
-  margin: 0;
- }
+    body {
+        max-width: 100vw;
+        margin: 0;
+    }
 
- .page-wrapper {
-  margin: 0;
- }
+    .page-wrapper {
+        margin: 0;
+    }
 
- .extra2 {
-  top: -362vw;
-  left: 8vw;
- }
+    .extra2 {
+        top: -362vw;
+        left: 8vw;
+    }
 
- #zen-pa
+    #zen-pa #zen-participation::before {
+        width: 15vw;
+        height: 29vw;
+    }
 
- #zen-participation::before {
-  width: 15vw;
-  height: 29vw;
- }
+    .viewall {
+        left: 10em;
+    }
 
- .viewall {
-  left: 10em;
- }
+    #zen-resources ul {
+        justify-content: space-evenly;
+        margin: -.5em 0;
+        padding: 1em 1.5em;
+    }
 
- #zen-resources ul {
-  justify-content: space-evenly;
-  margin: -.5em 0;
-  padding: 1em 1.5em;
- }
+    #zen-preamble {
+        margin: 10em 0 -.5em 0;
+        padding: .1em 1.5em;
+    }
 
- #zen-preamble {
-  margin: 10em 0 -.5em 0;
-  padding: .1em 1.5em;
- }
+    .explanation {
+        padding: .1em 1.5em;
+    }
 
- .viewall {
-  left: 10em;
- }
+    #zen-participation {
+        margin: 0;
+        padding: .1em 1.5em;
+    }
 
- .explanation {
-  padding: .1em 1.5em;
- }
+    #zen-benefits {
+        margin: -2em 0 0 0;
+        padding: .1em 1.5em;
+    }
 
- #zen-participation {
-  margin: 0;
-  padding: .1em 1.5em;
- }
+    .requirements h3,
+    .requirements p {
+        padding: .1em 1.5em;
+    }
 
- #zen-benefits {
-  margin: -2em 0 0 0;
-  padding: .1em 1.5em;
- }
+    [role='contentinfo'] {
+        margin: 1em 0;
+        padding: .5em 1.5em;
+    }
 
- .requirements h3, .requirements p {
-  padding: .1em 1.5em;
- }
+    footer {
+        margin: -1em 0 -.5em 0;
+        padding: .5em 1.5em;
+    }
 
- [role='contentinfo'] {
-  margin: 1em 0;
-  padding: .5em 1.5em;
- }
+    //reposition cloud
+    .extra1 {
+        top: -55px;
+    }
 
- footer {
-  margin: -1em 0 -.5em 0;
-  padding: .5em 1.5em;
- }
+    header {
+        text-align: none;
+        margin-top: 3.5em;
+    }
+
+    .viewall {
+        position: static;
+        left: 15em;
+        top: 7em;
+        margin-top: 14.5em;
+        margin-left: 2.25em;
+
+        :active {
+            padding: .5em;
+            border: 1.5px solid $gray-white;
+            text-decoration: underline;
+            border-radius: 8px;
+        }
+    }
+
+    .design-selection {
+        display: none;
+    }
+
+    #zen-summary {
+        margin-top: 8em;
+    }
+
+    // media queries
+    .extra2 {
+        top: -12vw;
+        left: 1vw;
+    }
+
+    .extra2::before {
+        top: 17vw;
+        left: -3.5px;
+    }
+
+    .extra2::after {
+        top: 3.5px;
+        left: -2px;
+    }
 }

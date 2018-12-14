@@ -1,0 +1,51 @@
+//navigation
+.design-selection,
+.design-archives {
+    position: absolute;
+    top: 16.5em;
+    left: 18%;
+}
+
+nav {
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    a {
+        text-decoration: none;
+        color: $gray-white;
+
+        :hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+//view all button
+.viewall {
+    width: 8em;
+    position: absolute;
+    left: 50.7em;
+    top: -1.8em;
+    transition-duration: .5s;
+
+    &::after {
+        content: '   >';
+        font-weight: bold;
+        color: $bg-main;
+        transition-duration: 1.5s;
+    }
+
+    &:hover {
+        padding: .5em;
+        border: 1.5px solid $gray-white;
+        text-decoration: underline;
+        border-radius: 8px;
+
+        &::after {
+            color: $gray-white;
+        }
+    }
+}

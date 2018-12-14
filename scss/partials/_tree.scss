@@ -38,22 +38,3 @@
     left: -9px;
     border-bottom: 17px solid brown;
 }
-
-// media queries
-@media screen and(max-width:450) {
-    .extra2 {
-        top: -12vw;
-        left: 1vw;
-    }
-
-    .extra2::before {
-        top: 17vw;
-        left: -3.5px;
-    }
-
-    .extra2::after {
-        top: 3.5px;
-        left: -2px;
-    }
-
-}
