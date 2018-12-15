@@ -2,9 +2,10 @@
 
 @import 'colors';
 @import 'fonts';
-@import 'tree';
+//@import 'tree';
 @import 'positioning';
 @import 'navigation';
+@import 'animations';
 
 //hide everything we want to hide
 .select,
@@ -132,6 +133,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         margin: .5em .5em 0 0;
+
     }
 }
 
@@ -140,12 +142,6 @@ footer {
     background-color: $light-blue;
     padding: .1em 10.3em;
 
-    h3::before {
-        content: ' ';
-        width: 100px;
-        height: 100px;
-        float: left;
-    }
 }
 
 #zen-benefits {

@@ -6,6 +6,17 @@
     left: 18%;
 }
 
+a.design-name:hover {
+    padding: 1em;
+
+    &::before {
+        content: '*';
+        color: $gray-white;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
 nav {
     ul {
         display: flex;
