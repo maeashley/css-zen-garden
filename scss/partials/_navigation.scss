@@ -8,6 +8,7 @@
 
 a.design-name:hover {
     padding: 1em;
+    transition-duration: 1.5s;
 
     &::before {
         content: '*';
@@ -38,7 +39,7 @@ nav {
 .viewall {
     width: 8em;
     position: absolute;
-    left: 60vw;
+    left: 52vw;
     top: -3vw;
     transition-duration: .5s;
 

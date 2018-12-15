@@ -13,125 +13,107 @@
 .next,
 .resources,
 .designer-name {
- display: none;
+    display: none;
 }
 
 //generic styling
 body {
- background-color: $bg-main;
- font-family: $primary-font;
- width: 100%;
- height: 100vh;
- margin: 0;
- background-image: url('/assets/snow5.gif_c200');
+    background-color: $bg-main;
+    font-family: $primary-font;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/assets/snow5.gif_c200');
 }
 
 h1,
 h2,
 h3 {
- font-family: $secondary-font;
- word-spacing: .08em;
- letter-spacing: .05em;
- color: $dark-gray;
+    font-family: $secondary-font;
+    word-spacing: .08em;
+    letter-spacing: .05em;
+    color: $dark-gray;
 }
 
 .page-wrapper {
- width: auto;
- // margin: 0 1vw;
- margin: 0;
+    width: auto;
+    margin: 0;
 }
 
 li {
- color: $bg-main;
+    color: $bg-main;
 }
 
-p > a {
- text-decoration: none;
- color: black;
+p>a {
+    text-decoration: none;
+    color: black;
 
- :hover {
-  text-decoration: underline;
- }
+    :hover {
+        text-decoration: underline;
+    }
 }
 
-[role="banner"] > h2 {
- margin-top: -25px;
+[role="banner"]>h2 {
+    margin-top: -25px;
 }
 
 header {
- text-align: center;
+    text-align: center;
 }
 
 #zen-summary {
- text-align: center;
- margin: auto;
- width: 50%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
 }
 
 footer {
- // margin: -1em -10.3em -.5em -10.3em;
- margin: 0;
- background-color: $light-blue;
- padding: .5em 12%;
- display: flex;
- justify-content: space-evenly;
+    // margin: -1em -10.3em -.5em -10.3em;
+    margin: 0;
+    background-color: $light-blue;
+    padding: .5em 12%;
+    display: flex;
+    justify-content: space-evenly;
 
- a {
-  text-decoration: none;
-  color: $gray-white;
+    a {
+        text-decoration: none;
+        color: $gray-white;
 
-  :hover {
-   text-decoration: underline;
-  }
- }
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 //section styling
 #zen-resources ul {
- display: flex;
- flex-flow: row wrap;
- justify-content: space-between;
- // margin: -.5em -10.3em -.5em -10.3em;
- margin: 0;
- background-color: $light-blue;
- padding: 1em 12%;
- list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    // margin: -.5em -10.3em -.5em -10.3em;
+    margin: 0;
+    background-color: $light-blue;
+    padding: 1em 12%;
+    list-style: none;
 
- a {
-  text-decoration: none;
-  color: $gray-white;
+    a {
+        text-decoration: none;
+        color: $gray-white;
 
-  :hover {
-   text-decoration: underline;
-  }
- }
-}
-
-#zen-preamble {
-<<<<<<< HEAD
- // margin: 10em -10.3em -.5em -10.3em;
- margin-top: 10em;
- background-color: #58a4b0;
- padding: .1em 12%;
-
- h3::before {
-  content: ' ';
-  float: left;
-  background-image: url('/assets/icons/snowman.svg');
-  width: 100px;
-  height: 135px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: .5em .5em 0 0;
- }
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .explanation {
- padding: .1em 12%;
-=======
-    margin: 10em -10.3em -.5em -10.3em;
+    padding: .1em 12%;
+}
+
+#zen-preamble {
+    margin-top: 14%;
     background-color: #58a4b0;
-    padding: .1em 10.3em;
+    padding: .1em 12%;
 
     h3::before {
         content: ' ';
@@ -144,23 +126,14 @@ footer {
         margin: .5em .5em 0 0;
 
     }
->>>>>>> ffefa42ff666cf70abb390bb5786578ed250f7a6
 }
 
 #zen-participation {
- // margin: 1em -10.3em -.5em -10.3em;
- margin: 0;
- background-color: $light-blue;
- padding: .1em 12%;
+    // margin: 1em -10.3em -.5em -10.3em;
+    margin: 0;
+    background-color: $light-blue;
+    padding: .1em 12%;
 
-<<<<<<< HEAD
- h3::before {
-  content: ' ';
-  width: 100px;
-  height: 100px;
-  float: left;
- }
-=======
     h3 {
         position: relative;
         margin-left: 5em;
@@ -198,63 +171,62 @@ footer {
     width: 100px;
     height: 50px;
     //background-color: pink;
->>>>>>> ffefa42ff666cf70abb390bb5786578ed250f7a6
 }
 
 #zen-benefits {
- // margin: -2em -10.3em -.5em -10.3em;
- margin: 0;
- background-color: $light-blue;
- padding: .1em 12%;
+    // margin: -2em -10.3em -.5em -10.3em;
+    margin: 0;
+    background-color: $light-blue;
+    padding: .1em 12%;
 
- p {
-  margin-top: -1em;
- }
+    p {
+        margin-top: -1em;
+    }
 }
 
 .requirements p {
- padding: 0 12%;
+    padding: 0 12%;
 }
 
 //needs to be after the p so it overrides
 [role='contentinfo'] {
- // margin: 1em -10.3em 1em -10.3em;
- margin: 0;
- background-color: $light-blue;
- padding: .5em 12% !important;
- text-align: center;
+    // margin: 1em -10.3em 1em -10.3em;
+    margin: 0;
+    background-color: $light-blue;
+    padding: .5em 12% !important;
+    text-align: center;
 
- a {
-  color: $gray-white;
-  text-decoration: none;
+    a {
+        color: $gray-white;
+        text-decoration: none;
 
-  :hover {
-   text-decoration: underline;
-  }
- }
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .requirements h3 {
- padding-left: 12%;
+    padding-left: 12%;
 }
 
 /*Icons*/
 
 #zen-explanation::before {
- content: ' ';
- float: right;
- background-image: url('/assets/icons/Snowflake.svg');
- width: 100px;
- height: 100px;
- background-repeat: no-repeat;
+    content: ' ';
+    float: right;
+    background-image: url('/assets/icons/Snowflake.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
 }
 
 #zen-requirements::before {
- content: ' ';
- float: right;
- background-image: url('/assets/icons/mug.svg');
- width: 100px;
- height: 100px;
- background-repeat: no-repeat;
- padding-right: 12%;
+    content: ' ';
+    float: right;
+    background-image: url('/assets/icons/mug.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    padding-right: 12%;
 }
