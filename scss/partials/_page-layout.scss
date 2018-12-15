@@ -2,7 +2,7 @@
 
 @import 'colors';
 @import 'fonts';
-@import 'tree';
+//@import 'tree';
 @import 'positioning';
 @import 'navigation';
 
@@ -140,12 +140,43 @@ footer {
     background-color: $light-blue;
     padding: .1em 10.3em;
 
-    h3::before {
-        content: ' ';
-        width: 100px;
-        height: 100px;
-        float: left;
+    h3 {
+        position: relative;
+        margin-left: 5em;
+        margin-bottom: -3em;
     }
+
+    h3::before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        display: block;
+        position: absolute;
+        top: .5em;
+        left: -3.5em;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 67px solid green;
+    }
+
+    h3::after {
+        width: 17px;
+        height: 33px;
+        content: "";
+        display: block;
+        position: relative;
+        top: .8em;
+        left: -2.6em;
+        border-bottom: 17px solid brown;
+    }
+}
+
+#zen-participation > p:nth-child(2)::before {
+    content: "";
+    float: left;
+    width: 100px;
+    height: 50px;
+    //background-color: pink;
 }
 
 #zen-benefits {
