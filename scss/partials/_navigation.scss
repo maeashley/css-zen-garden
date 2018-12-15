@@ -2,8 +2,8 @@
 .design-selection,
 .design-archives {
     position: absolute;
-    top: 16.5em;
-    left: 18%;
+    top: 42%;
+    left: 12%;
 }
 
 nav {
@@ -27,8 +27,8 @@ nav {
 .viewall {
     width: 8em;
     position: absolute;
-    left: 50.7em;
-    top: -1.8em;
+    left: 60vw;
+    top: -3vw;
     transition-duration: .5s;
 
     &::after {
