@@ -108,30 +108,9 @@ footer {
 }
 
 #zen-preamble {
-<<<<<<< HEAD
- // margin: 10em -10.3em -.5em -10.3em;
- margin-top: 10em;
- background-color: #58a4b0;
- padding: .1em 12%;
-
- h3::before {
-  content: ' ';
-  float: left;
-  background-image: url('/assets/icons/snowman.svg');
-  width: 100px;
-  height: 135px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: .5em .5em 0 0;
- }
-}
-
-.explanation {
- padding: .1em 12%;
-=======
-    margin: 10em -10.3em -.5em -10.3em;
+    margin-top: 14%;
     background-color: #58a4b0;
-    padding: .1em 10.3em;
+    padding: .1em 12%;
 
     h3::before {
         content: ' ';
@@ -144,7 +123,10 @@ footer {
         margin: .5em .5em 0 0;
 
     }
->>>>>>> ffefa42ff666cf70abb390bb5786578ed250f7a6
+}
+
+.explanation {
+    padding: .1em 12%;
 }
 
 #zen-participation {
@@ -153,14 +135,6 @@ footer {
  background-color: $light-blue;
  padding: .1em 12%;
 
-<<<<<<< HEAD
- h3::before {
-  content: ' ';
-  width: 100px;
-  height: 100px;
-  float: left;
- }
-=======
     h3 {
         position: relative;
         margin-left: 5em;
@@ -198,7 +172,6 @@ footer {
     width: 100px;
     height: 50px;
     //background-color: pink;
->>>>>>> ffefa42ff666cf70abb390bb5786578ed250f7a6
 }
 
 #zen-benefits {
