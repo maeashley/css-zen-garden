@@ -19,10 +19,6 @@
         height: 29vw;
     }
 
-    .viewall {
-        left: 10em;
-    }
-
     #zen-resources ul {
         justify-content: space-evenly;
         margin: -.5em 0;
@@ -70,15 +66,16 @@
 
     header {
         text-align: none;
-        margin-top: 3.5em;
+        margin-top: 4.5em;
     }
 
     .viewall {
         position: static;
-        left: 15em;
-        top: 7em;
-        margin-top: 9em;
-        margin-left: 3.9em;
+        left: 17%;
+        top: 9%;
+        margin-top: 70%;
+        margin-left: 35%;
+        width: 12em;
 
         :active {
             padding: .5em;
@@ -93,7 +90,7 @@
     }
 
     #zen-summary {
-        margin-top: 11em;
+        margin-top: 40%;
     }
 
     // media queries
