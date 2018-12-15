@@ -2,9 +2,10 @@
 
 @import 'colors';
 @import 'fonts';
-@import 'tree';
+//@import 'tree';
 @import 'positioning';
 @import 'navigation';
+@import 'animations';
 
 //hide everything we want to hide
 .select,
@@ -107,6 +108,7 @@ footer {
 }
 
 #zen-preamble {
+<<<<<<< HEAD
  // margin: 10em -10.3em -.5em -10.3em;
  margin-top: 10em;
  background-color: #58a4b0;
@@ -126,6 +128,23 @@ footer {
 
 .explanation {
  padding: .1em 12%;
+=======
+    margin: 10em -10.3em -.5em -10.3em;
+    background-color: #58a4b0;
+    padding: .1em 10.3em;
+
+    h3::before {
+        content: ' ';
+        float: left;
+        background-image: url('/assets/icons/snowman.svg');
+        width: 100px;
+        height: 135px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: .5em .5em 0 0;
+
+    }
+>>>>>>> ffefa42ff666cf70abb390bb5786578ed250f7a6
 }
 
 #zen-participation {
@@ -134,12 +153,52 @@ footer {
  background-color: $light-blue;
  padding: .1em 12%;
 
+<<<<<<< HEAD
  h3::before {
   content: ' ';
   width: 100px;
   height: 100px;
   float: left;
  }
+=======
+    h3 {
+        position: relative;
+        margin-left: 5em;
+        margin-bottom: -2.8em;
+    }
+
+    h3::before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        display: block;
+        position: absolute;
+        top: .5em;
+        left: -3.5em;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 67px solid green;
+    }
+
+    h3::after {
+        width: 17px;
+        height: 33px;
+        content: "";
+        display: block;
+        position: relative;
+        top: .8em;
+        left: -2.6em;
+        border-bottom: 17px solid brown;
+    }
+}
+
+#zen-participation p:nth-child(2)::before {
+    content: "";
+    float: left;
+    width: 100px;
+    height: 50px;
+    //background-color: pink;
+>>>>>>> ffefa42ff666cf70abb390bb5786578ed250f7a6
 }
 
 #zen-benefits {
